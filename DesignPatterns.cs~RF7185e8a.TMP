@@ -29,7 +29,6 @@ namespace DesignPatterns
                 Console.WriteLine("Enter 4 to execute shoping portal client done with Adapter design Pattern");
                 Console.WriteLine("Enter 5 to execute Car creation which is done using Facade design Pattern");
                 Console.WriteLine("Enter 6 to exceute shape of polygon class done using Proxy design Patterns");
-                Console.WriteLine("Enter 7 to execute Subscribe/Unsubscribe product from shooping site using Observer Design Pattern");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 ////switch case to take to your desired class
                 switch (choice)
@@ -57,9 +56,6 @@ namespace DesignPatterns
                     case 6:
                         ProxyPolygon proxyPolygon = new ProxyPolygon();
                         proxyPolygon.ProxyRunner();
-                        break;
-                    case 7:
-                        Product.RunnerObserver();
                         break;
                 }
 
