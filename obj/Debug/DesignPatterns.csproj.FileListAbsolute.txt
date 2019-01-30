@@ -1,4 +1,3 @@
-D:\DesignPatterns\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe.config
 D:\DesignPatterns\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe
 D:\DesignPatterns\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.pdb
 D:\DesignPatterns\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csprojAssemblyReference.cache

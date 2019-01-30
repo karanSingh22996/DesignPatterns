@@ -43,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bike.cs" />
+    <Compile Include="ConcreteVehicleFactory.cs" />
     <Compile Include="DesignPatterns.cs" />
+    <Compile Include="EmployeeAdapter.cs" />
+    <Compile Include="HRSystem.cs" />
+    <Compile Include="IFactory.cs" />
+    <Compile Include="ITarget.cs" />
+    <Compile Include="ITarget2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scooter.cs" />
     <Compile Include="SingletonEx.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="ThirdPartyBillingSystem.cs" />
+    <Compile Include="VehicleFactory.cs" />
+    <Compile Include="VendorAdaptee.cs" />
+    <Compile Include="VendorAdapter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

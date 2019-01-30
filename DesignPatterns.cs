@@ -24,6 +24,9 @@ namespace DesignPatterns
             do
             {
                 Console.WriteLine("Enter 1 to execute First singleton program");
+                Console.WriteLine("Enter 2 to execute Factory design Progrm");
+                Console.WriteLine("Enter 3 to execute Adapter design Pattern Program");
+                Console.WriteLine("Enter 4 to execute shoping portal client done with Adapter design Pattern");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 ////switch case to take to your desired class
                 switch (choice)
@@ -31,6 +34,18 @@ namespace DesignPatterns
                     case 1:
                         SingletonEx fromStudent = SingletonEx.GetInstance;
                         fromStudent.Execution();
+                        break;
+                    case 2:
+                        ConcreteVehicleFactory concreteVehicleFactory = new ConcreteVehicleFactory();
+                        concreteVehicleFactory.Runner();
+                        break;
+                    case 3:
+                        EmployeeAdapter employeeAdapter = new EmployeeAdapter();
+                        employeeAdapter.BillingRunner();
+                        break;
+                    case 4:
+                        VendorAdapter vendorAdapter = new VendorAdapter();
+                        vendorAdapter.SellingItems();
                         break;
                 }
 

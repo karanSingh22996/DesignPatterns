@@ -18,6 +18,11 @@ namespace DesignPatterns
         /// </summary>
         private static int counter = 0;
 
+        private SingletonEx()
+        {
+            counter++;
+            Console.WriteLine("Total num of time object created " + counter);
+        }
         /// <summary>
         /// The instance of singleton is set null 
         /// so that we can avoid creation of more tha one instance
