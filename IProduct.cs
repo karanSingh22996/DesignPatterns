@@ -17,9 +17,9 @@ namespace DesignPatterns
         void Subscribe(Customer customer);
 
         /// <summary>
-        /// Unsubscribe.
+        /// the Unsubscribe.
         /// </summary>
-        /// <param name="customer"> The customer </param>
+        /// <param name="customer">The customer of type Customer.</param>
         void UnSubscribe(Customer customer);
 
         /// <summary>

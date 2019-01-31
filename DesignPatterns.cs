@@ -30,6 +30,8 @@ namespace DesignPatterns
                 Console.WriteLine("Enter 5 to execute Car creation which is done using Facade design Pattern");
                 Console.WriteLine("Enter 6 to exceute shape of polygon class done using Proxy design Patterns");
                 Console.WriteLine("Enter 7 to execute Subscribe/Unsubscribe product from shooping site using Observer Design Pattern");
+                Console.WriteLine("Enter 8 to Execute store/visitor program using Visitor Design Pattern");
+                Console.WriteLine("Enter 9 to execute chatRoom program using Mediator design Patterns");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 ////switch case to take to your desired class
                 switch (choice)
@@ -60,6 +62,14 @@ namespace DesignPatterns
                         break;
                     case 7:
                         Product.RunnerObserver();
+                        break;
+                    case 8:
+                        VisitorRunner visitorRunner = new VisitorRunner();
+                        visitorRunner.Runner();
+                        break;
+                    case 9:
+                        MediatorRunner mediatorRunner = new MediatorRunner();
+                        mediatorRunner.Runner();
                         break;
                 }
 

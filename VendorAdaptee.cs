@@ -6,8 +6,16 @@
 namespace DesignPatterns
 {
     using System.Collections.Generic;
+
+    /// <summary>
+    /// vendor adapt is a class
+    /// </summary>
     public class VendorAdaptee
     {
+        /// <summary>
+        /// Gets the list of products.
+        /// </summary>
+        /// <returns>list of string</returns>
         public List<string> GetListOfProducts()
         {
             List<string> products = new List<string>();

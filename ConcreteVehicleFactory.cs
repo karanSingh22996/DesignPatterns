@@ -19,7 +19,7 @@ namespace DesignPatterns
         /// </summary>
         /// <param name="vehicle">The vehicle of string type.</param>
         /// <returns>factory of interface type</returns>
-        /// <exception cref="ApplicationException"></exception>
+        /// <exception cref="ApplicationException">throw the type can not be created</exception>
         public override IFactory GetVehicle(string vehicle)
         {
             switch (vehicle)
@@ -32,13 +32,18 @@ namespace DesignPatterns
                     throw new ApplicationException(string.Format("Vehicle '{0}' cannot be created", vehicle));
             }
         }
+
+        /// <summary>
+        /// Runners this instance.
+        /// </summary>
         public void Runner()
         {
+            ////creating object of concrete using the reference of an interface
             VehicleFactory factory = new ConcreteVehicleFactory();
-
+            ////calling method using the reference of an interface
             IFactory scooter = factory.GetVehicle("Scooter");
             scooter.Drive(10);
-
+            ////calling method using reference of an interface
             IFactory bike = factory.GetVehicle("Bike");
             bike.Drive(20);
         }

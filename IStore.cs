@@ -1,23 +1,19 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="CarEngine.cs" company="CompanyName">
+// <copyright file="IStore.cs" company="CompanyName">
 //     Company copyright tag.
 // </copyright>
 //-----------------------------------------------------------------------
 namespace DesignPatterns
 {
-    using System;
-
     /// <summary>
-    /// Car engine is class
+    /// I store is an interface
     /// </summary>
-    public class CarEngine
+    public interface IStore
     {
         /// <summary>
-        /// Sets the engine.
+        /// Visits the specified visitor.
         /// </summary>
-        public void SetEngine()
-        {
-            Console.WriteLine("Car engine is created");
-        }
+        /// <param name="visitor">The visitor of interface type.</param>
+        void Visit(IVisitor visitor);
     }
 }
