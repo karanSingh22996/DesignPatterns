@@ -51,6 +51,7 @@
     <Compile Include="CarEngine.cs" />
     <Compile Include="CarFacade.cs" />
     <Compile Include="CarModel.cs" />
+    <Compile Include="Carrots.cs" />
     <Compile Include="ChatMediator.cs" />
     <Compile Include="ConcreteVehicleFactory.cs" />
     <Compile Include="Customer.cs" />
@@ -74,10 +75,16 @@
     <Compile Include="ProxyPolygon.cs" />
     <Compile Include="RaceBike.cs" />
     <Compile Include="RealPolygon.cs" />
+    <Compile Include="IRestaurant.cs" />
+    <Compile Include="Restaurant.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
     <Compile Include="Scooter.cs" />
     <Compile Include="SingletonEx.cs" />
     <Compile Include="ThirdPartyBillingSystem.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="Veggies.cs" />
+    <Compile Include="VeggiesRunner.cs" />
     <Compile Include="VehicleFactory.cs" />
     <Compile Include="VendorAdaptee.cs" />
     <Compile Include="VendorAdapter.cs" />

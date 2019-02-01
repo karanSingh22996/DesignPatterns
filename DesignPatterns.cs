@@ -20,6 +20,7 @@ namespace DesignPatterns
         public static void Main(string[] args)
         {
             char ch;
+            int choice=0;
             ////starting do while iteration
             do
             {
@@ -32,7 +33,14 @@ namespace DesignPatterns
                 Console.WriteLine("Enter 7 to execute Subscribe/Unsubscribe product from shooping site using Observer Design Pattern");
                 Console.WriteLine("Enter 8 to Execute store/visitor program using Visitor Design Pattern");
                 Console.WriteLine("Enter 9 to execute chatRoom program using Mediator design Patterns");
-                int choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter 10 to execute restaurant/veg market using Observer Design Pattern");
+                try
+                {
+                    choice = Convert.ToInt32(Console.ReadLine());
+                }catch(Exception e)
+                {
+                    Console.WriteLine("Only number is accepted " + e.Message);
+                }
                 ////switch case to take to your desired class
                 switch (choice)
                 {
@@ -70,6 +78,13 @@ namespace DesignPatterns
                     case 9:
                         MediatorRunner mediatorRunner = new MediatorRunner();
                         mediatorRunner.Runner();
+                        break;
+                    case 10:
+                        VeggiesRunner veggiesRunner = new VeggiesRunner();
+                        veggiesRunner.Runner();
+                        break;
+                    default:
+                        Console.WriteLine("Enter number in range only");
                         break;
                 }
 
