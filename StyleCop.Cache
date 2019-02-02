@@ -23,6 +23,9 @@
     </timestamps>
     <violations />
   </sourcecode>
+  <project key="-1981434248">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
   <sourcecode name="BasicUser.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2019/01/07 10:51:44.117</styleCop>
@@ -303,7 +306,7 @@
     <timestamps>
       <styleCop>2019/01/07 10:51:44.117</styleCop>
       <settingsFile>2019/01/07 10:51:44.098</settingsFile>
-      <sourceFile>2019/02/01 12:00:34.213</sourceFile>
+      <sourceFile>2019/02/02 10:22:51.206</sourceFile>
       <parser>2019/01/07 10:51:44.117</parser>
       <StyleCop.CSharp.DocumentationRules>2019/01/07 10:51:44.117</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>1786944448</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1047,7 +1050,4 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <project key="-1981434248">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
 </stylecopresultscache>
