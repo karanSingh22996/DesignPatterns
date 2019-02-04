@@ -36,6 +36,7 @@ namespace DesignPatterns
                     Console.WriteLine("Enter 8 to Execute store/visitor program using Visitor Design Pattern");
                     Console.WriteLine("Enter 9 to execute chatRoom program using Mediator design Patterns");
                     Console.WriteLine("Enter 10 to execute restaurant/veg market using Observer Design Pattern");
+                    Console.WriteLine("Enter 11 to execute Reflection");
                     try
                     {
                         choice = Convert.ToInt32(Console.ReadLine());
@@ -85,6 +86,10 @@ namespace DesignPatterns
                         case 10:
                             VeggiesRunner veggiesRunner = new VeggiesRunner();
                             veggiesRunner.Runner();
+                            break;
+                        case 11:
+                            EmployeeReflection employeeReflection = new EmployeeReflection();
+                            employeeReflection.Reflection();
                             break;
                         default:
                             Console.WriteLine("Enter number in range only");

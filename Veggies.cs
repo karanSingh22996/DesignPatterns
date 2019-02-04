@@ -51,19 +51,6 @@ namespace DesignPatterns
         }
 
         /// <summary>
-        /// Notifies this instance.
-        /// </summary>
-        public void Notify()
-        {
-            foreach (IRestaurant restaurant in this.restaurants)
-            {
-                restaurant.Update(this);
-            }
-
-            Console.WriteLine();
-        }
-
-        /// <summary>
         /// Gets or sets the price per kg.
         /// </summary>
         /// <value>
@@ -84,6 +71,19 @@ namespace DesignPatterns
                     this.Notify();
                 }
             }
+        }
+
+        /// <summary>
+        /// Notifies this instance.
+        /// </summary>
+        public void Notify()
+        {
+            foreach (IRestaurant restaurant in this.restaurants)
+            {
+                restaurant.Update(this);
+            }
+
+            Console.WriteLine();
         }
     }
 }

@@ -57,6 +57,7 @@
     <Compile Include="Customer.cs" />
     <Compile Include="DesignPatterns.cs" />
     <Compile Include="EmployeeAdapter.cs" />
+    <Compile Include="EmployeeReflection.cs" />
     <Compile Include="HRSystem.cs" />
     <Compile Include="IChatMediator.cs" />
     <Compile Include="ICustomer.cs" />
